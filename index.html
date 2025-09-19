@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Mohammad Yanal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Hi, I'm Mohammad Yanal</h2>
+                <p>Junior Java Developer & Customer Service Professional from Amman, Jordan</p>
+                <div class="hero-buttons">
+                    <a href="#cv" class="cta-button secondary">View CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h3 class="section-title">About Me</h3>
+            <div class="about-content">
+                <img src="images/Me.jpg" alt="Mohammad Yanal Profile Picture" class="profile-pic">
+                <div class="about-text">
+                    <p>
+                        I'm Mohammad Yanal, a dedicated professional with experience in customer service and a passion for Java development. 
+                        I perform various tasks with perseverance and maintain a high participation rate with positive energy.
+                    </p>
+                    <p>
+                        I can work independently or as part of a team, and I'm an excellent communicator. Currently expanding my skills 
+                        in web development and Java programming while building practical projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced CV Section -->
+    <section class="cv-section" id="cv">
+        <div class="container">
+            <h3 class="section-title">My Resume</h3>
+            <div class="cv-content">
+                <div class="cv-preview">
+                    <div class="cv-icon">📄</div>
+                    <h4>Mohammad Yanal's Resume</h4>
+                    <p>Junior Java Developer with customer service experience and IT background from Arab Open University, Jordan.</p>
+                    
+                    <div class="cv-stats">
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Companies</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">IT</span>
+                            <span class="stat-label">Degree</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cv-actions">
+                    <h5>Download Options</h5>
+                    <div class="download-buttons">
+                        <a href="files/Mohammad Yanal Resume.pdf" download="files/Mohammad_Yanal_Resume" class="download-btn pdf-btn" onclick="trackDownload('pdf')">
+                            <span class="btn-icon">📄</span>
+                            <div class="btn-text">
+                                <strong>Download PDF</strong>
+                                <small>Perfect for printing</small>
+                            </div>
+                        </a>
+                        
+                        <a href="files/Mohammad_Yanal_CV_OnePage_Compact.docx" download="files/Mohammad_Yanal_CV_OnePage_Compact" class="download-btn docx-btn" onclick="trackDownload('docx')">
+                            <span class="btn-icon">📝</span>
+                            <div class="btn-text">
+                                <strong>Download DOCX</strong>
+                                <small>Editable format</small>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="cv-preview-online">
+                        <button class="preview-btn" onclick="openCVPreview()">
+                            <span class="btn-icon">👁️</span>
+                            Preview Online
+                        </button>
+                        <p class="file-info">Last updated: <span id="lastUpdated">January 2025</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Professional Summary -->
+            <div class="professional-summary">
+                <h5>Professional Summary</h5>
+                <p>Solid beginner with experience in various task capacities. Persevering professional with high participation rate and positive energy. Can work exclusively or as part of a team. Excellent communicator with individuals.</p>
+            </div>
+            
+            <!-- Work Experience Highlights -->
+            <div class="work-highlights">
+                <h5>Recent Experience</h5>
+                <div class="experience-grid">
+                    <div class="exp-card">
+                        <h6>Customer Service Associate</h6>
+                        <p class="company">United City | Aug 2023 - Present</p>
+                        <p class="role-desc">Front & Back Office Distributor & Customer Service</p>
+                    </div>
+                    <div class="exp-card">
+                        <h6>Community Support Agent</h6>
+                        <p class="company">Baaz Inc. | Nov 2022 - Aug 2023</p>
+                        <p class="role-desc">Content moderation & support for end users</p>
+                    </div>
+                    <div class="exp-card">
+                        <h6>Customer Service Agent</h6>
+                        <p class="company">Jeeny | Dec 2019 - Oct 2021</p>
+                        <p class="role-desc">Inbound & Outbound & tickets</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Skills Preview -->
+            <div class="skills-preview">
+                <h5>Skills & Training</h5>
+                <div class="skills-tags">
+                    <span class="skill-tag">Java Development</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">Customer Service</span>
+                    <span class="skill-tag">Content Moderation</span>
+                    <span class="skill-tag">IT Support</span>
+                    <span class="skill-tag">Team Collaboration</span>
+                </div>
+                <div class="certifications">
+                    <h6>Recent Training</h6>
+                    <ul>
+                        <li>Introduction to Software Engineering (Coursera) - 14 Hours</li>
+                        <li>HTML5 CSS3 BOOTSTRAP (Udemy) - 16.5 Hours</li>
+                        <li>Java Full Course for free ☕ (YouTube) - 12 Hours</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="contact-info-cv">
+                <h5>Contact Information</h5>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span>mhmd200yanal@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span>+962 79 915 7805</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🌐</span>
+                        <a href="https://mhmd991.github.io/responsivePortfolio/" target="_blank">Portfolio Website</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💼</span>
+                        <a href="https://www.linkedin.com/in/mhmd991/" target="_blank">LinkedIn Profile</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Amman, Jordan - Wasfi Al Tal Street</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h3 class="section-title">Get in Touch</h3>
+            <p>I'd love to hear from you! Feel free to reach out for opportunities, collaborations, or just to connect.</p>
+            <div class="contact-methods">
+                <a href="mailto:mhmd200yanal@gmail.com" class="cta-button contact-button">Email Me</a>
+                <a href="https://www.linkedin.com/in/mhmd991/" target="_blank" class="cta-button secondary">LinkedIn</a>
+                <a href="tel:+96279915805" class="cta-button secondary">Call Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mohammad Yanal. All rights reserved. | Jordanian Developer | Amman, Jordan</p>
+        </div>
+    </footer>
+
+    <!-- CV Preview Modal -->
+    <div id="cvModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCVPreview()">&times;</span>
+            <h3>Mohammad Yanal's Resume Preview</h3>
+            <div class="pdf-container">
+                <iframe id="cvFrame" src="" width="100%" height="600px"></iframe>
+            </div>
+            <div class="modal-actions">
+                <a href="files/Mohammad Yanal Resume.pdf" download="files/Mohammad Yanal Resume.pdf" class="cta-button">Download PDF</a>
+                <button onclick="closeCVPreview()" class="cta-button secondary">Close</button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
